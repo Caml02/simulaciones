@@ -109,10 +109,11 @@ const ActividadDiez = () => {
     const intervalId = setInterval(() => {
       ejecutarSimulacion();
     }, 1000);
-
+  
     return () => clearInterval(intervalId);
   }, [tiempo, contadorViajes, simulacionData, ejecutarSimulacion]);
-
+  
+  
   return (
     <div>
       <div className="container pt-5">
