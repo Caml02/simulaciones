@@ -1,5 +1,6 @@
 "use client";
 import { useAdminContext } from "../components/AdminContext";
+import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
 
  export default function NavBar() {
@@ -82,6 +83,7 @@ import ActividadOcho from "./ActividadOcho";
 
             <div className="">
                 {activeTab === "Actividad8" && <ActividadOcho />}
+                {activeTab === "Actividad10" && <ActividadDiez />}
             </div>
         </div>
     )
