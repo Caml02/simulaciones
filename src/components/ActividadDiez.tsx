@@ -89,11 +89,7 @@ const ActividadDiez = () => {
       console.log("Promedio de pasajeros que llegan: ", promedio.toFixed(2));
     }
   };
-  
-  
-  // Resto del código...
-  
-  
+
 
   const iniciarSimulacion = () => {
     setSimulacionData([]);
@@ -109,10 +105,9 @@ const ActividadDiez = () => {
     const intervalId = setInterval(() => {
       ejecutarSimulacion();
     }, 1000);
-  
+
     return () => clearInterval(intervalId);
   }, [tiempo, contadorViajes, simulacionData, ejecutarSimulacion]);
-  
   
   return (
     <div>
