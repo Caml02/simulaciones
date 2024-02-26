@@ -1,4 +1,5 @@
 "use client";
+import Home from "@/components/Home";
 import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
@@ -82,6 +83,7 @@ import ActividadOcho from "./ActividadOcho";
             </div>
 
             <div className="">
+                {activeTab === "Home" && <Home/>}
                 {activeTab === "Actividad8" && <ActividadOcho />}
                 {activeTab === "Actividad10" && <ActividadDiez />}
             </div>
