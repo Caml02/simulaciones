@@ -111,7 +111,7 @@ const ActividadDiez = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [tiempo, contadorViajes, simulacionData]);
+  }, [tiempo, contadorViajes, simulacionData, ejecutarSimulacion]);
 
   return (
     <div>
