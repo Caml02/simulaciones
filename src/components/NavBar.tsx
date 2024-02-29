@@ -1,4 +1,5 @@
 "use client";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Home from "@/components/Home";
 import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
@@ -30,21 +31,21 @@ import ActividadOcho from "./ActividadOcho";
                                     className={`nav-item mx-2 ${isTabActive("Home")}`}>
                                     <button className="nav-link" aria-current="page">Home</button>
                                 </li>
-                                <li onClick={() => changeTab("Actividad8")}
-                                    className={`nav-item mx-2 ${isTabActive("Actividad8")}`}>
+                                <li onClick={() => changeTab("ActividadOcho")}
+                                    className={`nav-item mx-2 ${isTabActive("ActividadOcho")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 8</button>
                                 </li>
                                 <li onClick={() => changeTab("Actividad10")}
                                     className={`nav-item mx-2 ${isTabActive("Actividad10")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 10</button>
                                 </li>
-                                <li onClick={() => changeTab("Services")}
-                                    className={`nav-item mx-2 ${isTabActive("Services")}`}>
-                                    <button className="nav-link" aria-current="page">Services</button>
+                                <li onClick={() => changeTab("ActividadOnce")}
+                                    className={`nav-item mx-2 ${isTabActive("ActividadOnce")}`}>
+                                    <button className="nav-link" aria-current="page">Actividad 11</button>
                                 </li>
                                 <li onClick={() => changeTab("LogIn")}
                                     className={`nav-item mx-2 ${isTabActive("LogIn")}`}>
-                                    <button className="nav-link" aria-current="page">Log In</button>
+                                    <button className="nav-link" aria-current="page">Actividad 12</button>
                                 </li>
                             </ul>
                         </div>
@@ -62,21 +63,21 @@ import ActividadOcho from "./ActividadOcho";
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Home")}`} >
                             Home
                         </button>
-                        <button onClick={() => changeTab("AboutUs")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("AboutUs")}`} >
-                            About Us
+                        <button onClick={() => changeTab("ActividadOcho")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadOcho")}`} >
+                            Actividad 8
                         </button>
-                        <button onClick={() => changeTab("Store")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Store")}`} >
-                            Store
+                        <button onClick={() => changeTab("Actividad10")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Actividad10")}`} >
+                            Actividad 10
                         </button>
-                        <button onClick={() => changeTab("Services")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Services")}`} >
-                            Services
+                        <button onClick={() => changeTab("ActividadOnce")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadOnce")}`} >
+                            Actividad 11
                         </button>
                         <button onClick={() => changeTab("LogIn")} 
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("LogIn")}`} >
-                            Login
+                            Actividad 12
                         </button>
                     </ul>      
                 </div>                  
@@ -84,7 +85,7 @@ import ActividadOcho from "./ActividadOcho";
 
             <div className="">
                 {activeTab === "Home" && <Home/>}
-                {activeTab === "Actividad8" && <ActividadOcho />}
+                {activeTab === "ActividadOcho" && <ActividadOcho />}
                 {activeTab === "Actividad10" && <ActividadDiez />}
             </div>
         </div>
