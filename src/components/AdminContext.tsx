@@ -10,7 +10,7 @@ interface AdminContextProps {
 const AdminContext = createContext<AdminContextProps | undefined>(undefined);
 
 export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [activeTab, setActiveTab] = React.useState('Home');
+  const [activeTab, setActiveTab] = React.useState('ActividadOnce');
 
 
   const changeTab: AdminContextProps['changeTab'] = (tabName) => {

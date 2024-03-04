@@ -4,6 +4,7 @@ import Home from "@/components/Home";
 import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
+import ActividadOnce from "./ActividadOnce";
 
  export default function NavBar() {
     
@@ -35,8 +36,8 @@ import ActividadOcho from "./ActividadOcho";
                                     className={`nav-item mx-2 ${isTabActive("ActividadOcho")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 8</button>
                                 </li>
-                                <li onClick={() => changeTab("Actividad10")}
-                                    className={`nav-item mx-2 ${isTabActive("Actividad10")}`}>
+                                <li onClick={() => changeTab("ActividadDiez")}
+                                    className={`nav-item mx-2 ${isTabActive("ActividadDiez")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 10</button>
                                 </li>
                                 <li onClick={() => changeTab("ActividadOnce")}
@@ -67,8 +68,8 @@ import ActividadOcho from "./ActividadOcho";
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadOcho")}`} >
                             Actividad 8
                         </button>
-                        <button onClick={() => changeTab("Actividad10")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Actividad10")}`} >
+                        <button onClick={() => changeTab("ActividadDiez")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadDiez")}`} >
                             Actividad 10
                         </button>
                         <button onClick={() => changeTab("ActividadOnce")} 
@@ -86,7 +87,8 @@ import ActividadOcho from "./ActividadOcho";
             <div className="">
                 {activeTab === "Home" && <Home/>}
                 {activeTab === "ActividadOcho" && <ActividadOcho />}
-                {activeTab === "Actividad10" && <ActividadDiez />}
+                {activeTab === "ActividadDiez" && <ActividadDiez />}
+                {activeTab === "ActividadOnce" && <ActividadOnce />}
             </div>
         </div>
     )
