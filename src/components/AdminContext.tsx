@@ -10,13 +10,11 @@ interface AdminContextProps {
 const AdminContext = createContext<AdminContextProps | undefined>(undefined);
 
 export const AdminProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [activeTab, setActiveTab] = React.useState('ActividadOnce');
+  const [activeTab, setActiveTab] = React.useState('Home');
 
 
   const changeTab: AdminContextProps['changeTab'] = (tabName) => {
     setActiveTab(tabName);
-    // Add logic to set hideSidebar based on the active tab
-
   };
 
   return (
