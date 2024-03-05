@@ -5,7 +5,7 @@ import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
 import ActividadOnce from "./ActividadOnce"
-import ActividadDoce from './ActividadDoce';
+import ActividadDoce from "./ActividadDoce";
 
  export default function NavBar() {
     

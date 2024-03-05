@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import Footer from './Footer';
 
 interface Aterrizaje {
   cantidad: number;
   timestamp: string;
 }
 
-const ActividadDoce: React.FC = () => {
+const ActividadDoce = () => {
   const [aterrizajes, setAterrizajes] = useState<Aterrizaje[]>([]);
   const [horaInicio, setHoraInicio] = useState<string>(new Date().toLocaleTimeString());
   const [totalAterrizajes, setTotalAterrizajes] = useState<number>(0);
@@ -110,6 +111,7 @@ const ActividadDoce: React.FC = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
   );
 };
