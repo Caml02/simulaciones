@@ -1,5 +1,4 @@
 "use client";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Home from "@/components/Home";
 import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
