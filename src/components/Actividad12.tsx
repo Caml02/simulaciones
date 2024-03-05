@@ -6,7 +6,7 @@ interface Aterrizaje {
   timestamp: string;
 }
 
-const ActividadDoce = () => {
+const Actividad12 = () => {
   const [aterrizajes, setAterrizajes] = useState<Aterrizaje[]>([]);
   const [horaInicio, setHoraInicio] = useState<string>(new Date().toLocaleTimeString());
   const [totalAterrizajes, setTotalAterrizajes] = useState<number>(0);
@@ -116,4 +116,4 @@ const ActividadDoce = () => {
   );
 };
 
-export default ActividadDoce;
+export default Actividad12;

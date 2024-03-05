@@ -4,7 +4,7 @@ import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
 import ActividadOnce from "./ActividadOnce"
-import ActividadDoce from "./ActividadDoce";
+import Actividad12 from "./Actividad12";
 
  export default function NavBar() {
     
@@ -44,8 +44,8 @@ import ActividadDoce from "./ActividadDoce";
                                     className={`nav-item mx-2 ${isTabActive("ActividadOnce")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 11</button>
                                 </li>
-                                <li onClick={() => changeTab("ActividadDoce")}
-                                    className={`nav-item mx-2 ${isTabActive("ActividadDoce")}`}>
+                                <li onClick={() => changeTab("Actividad12")}
+                                    className={`nav-item mx-2 ${isTabActive("Actividad12")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 12</button>
                                 </li>
                             </ul>
@@ -76,8 +76,8 @@ import ActividadDoce from "./ActividadDoce";
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadOnce")}`} >
                             Actividad 11
                         </button>
-                        <button onClick={() => changeTab("ActividadDoce")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadDoce")}`} >
+                        <button onClick={() => changeTab("Actividad12")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Actividad12")}`} >
                             Actividad 12
                         </button>
                     </ul>      
@@ -89,7 +89,7 @@ import ActividadDoce from "./ActividadDoce";
                 {activeTab === "ActividadOcho" && <ActividadOcho />}
                 {activeTab === "ActividadDiez" && <ActividadDiez />}
                 {activeTab === "ActividadOnce" && <ActividadOnce />}
-                {activeTab === "ActividadDoce" && <ActividadDoce />}
+                {activeTab === "Actividad12" && <Actividad12 />}
             </div>
         </div>
     )
