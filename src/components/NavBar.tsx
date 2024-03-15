@@ -6,6 +6,7 @@ import ActividadDiez from "./ActividadDiez";
 import ActividadOcho from "./ActividadOcho";
 import ActividadOnce from "./ActividadOnce"
 import Actividad12 from "./Actividad12";
+import { Actividad14 } from "./Actividad14";
 
  export default function NavBar() {
     
@@ -65,10 +66,6 @@ import Actividad12 from "./Actividad12";
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Home")}`} >
                             Home
                         </button>
-                        <button onClick={() => changeTab("ActividadOcho")} 
-                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadOcho")}`} >
-                            Actividad 8
-                        </button>
                         <button onClick={() => changeTab("ActividadDiez")} 
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("ActividadDiez")}`} >
                             Actividad 10
@@ -81,6 +78,10 @@ import Actividad12 from "./Actividad12";
                                 className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Actividad12")}`} >
                             Actividad 12
                         </button>
+                        <button onClick={() => changeTab("Actividad14")} 
+                                className={`nav-item list-group-item list-group-item-action py-2 ripple ${isTabActive("Actividad14")}`} >
+                            Actividad 14
+                        </button>
                     </ul>      
                 </div>                  
             </div>
@@ -91,6 +92,7 @@ import Actividad12 from "./Actividad12";
                 {activeTab === "ActividadDiez" && <ActividadDiez />}
                 {activeTab === "ActividadOnce" && <ActividadOnce />}
                 {activeTab === "Actividad12" && <Actividad12 />}
+                {activeTab === "Actividad14" && <Actividad14 />}
             </div>
         </div>
     )
