@@ -1,6 +1,7 @@
+"use client"
 import NavBar from "@/components/NavBar";
 
-export default function Home() {
+export default function App() {
   return (
     <main >
       <NavBar />
