@@ -1,5 +1,4 @@
 "use client";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Home from "@/components/Home";
 import { useAdminContext } from "../components/AdminContext";
 import ActividadDiez from "./ActividadDiez";
@@ -8,7 +7,7 @@ import ActividadOnce from "./ActividadOnce"
 import Actividad12 from "./Actividad12";
 import { Actividad14 } from "./Actividad14";
 
- export default function NavBar() {
+const NavBar = () => {
     
     const { activeTab, changeTab } = useAdminContext();
     const isTabActive = (tabName: string) => {
@@ -98,3 +97,4 @@ import { Actividad14 } from "./Actividad14";
     )
 }
 
+export default NavBar;
