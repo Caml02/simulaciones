@@ -34,10 +34,6 @@ import { Actividad14 } from "./Actividad14";
                                     className={`nav-item mx-2 ${isTabActive("Home")}`}>
                                     <button className="nav-link" aria-current="page">Home</button>
                                 </li>
-                                <li onClick={() => changeTab("ActividadOcho")}
-                                    className={`nav-item mx-2 ${isTabActive("ActividadOcho")}`}>
-                                    <button className="nav-link" aria-current="page">Actividad 8</button>
-                                </li>
                                 <li onClick={() => changeTab("ActividadDiez")}
                                     className={`nav-item mx-2 ${isTabActive("ActividadDiez")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 10</button>
@@ -49,6 +45,10 @@ import { Actividad14 } from "./Actividad14";
                                 <li onClick={() => changeTab("Actividad12")}
                                     className={`nav-item mx-2 ${isTabActive("Actividad12")}`}>
                                     <button className="nav-link" aria-current="page">Actividad 12</button>
+                                </li>
+                                <li onClick={() => changeTab("Actividad14")}
+                                    className={`nav-item mx-2 ${isTabActive("Actividad14")}`}>
+                                    <button className="nav-link" aria-current="page">Actividad 14</button>
                                 </li>
                             </ul>
                         </div>
