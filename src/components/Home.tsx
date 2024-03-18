@@ -13,7 +13,7 @@ const Home = () => {
                         <div className="card-body text-start">
                             <p className="card-text">Este proyecto es un repositorio de actividades las cuales de ayudarán
                             a realizar simulaciones de casos especificos. Las actividades las puedes encontrar navegando hacia ellas atraves de la barra de navegacion en la parte
-                            superior de esta pagina. <span className="fw-bold">Actividad 8</span>, <span className="fw-bold">Actividad 10</span>, y el resto de ellas corresponden al programa
+                            superior de esta pagina. <span className="fw-bold">Actividad 11</span>, <span className="fw-bold">Actividad 10</span>, y el resto de ellas corresponden al programa
                             de la materia <span className="fw-bold">Simulacion de Sistemas</span> de la carrera: Ingeniería en Software.</p>
                             <p>Si quieres ver mas a fondo como se realizaron las simulaciones te dejo el codigo aqui:</p>
                             <a className="text-muted text-decoration-none" href="https://github.com/Caml02/simulaciones" target="blank">Codigo Fuente</a>
